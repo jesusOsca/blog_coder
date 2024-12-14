@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Coder</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'blog:home' %}">Inicio</a>
+        <a href="{% url 'usuarios:signup' %}">Registro</a>
+        <a href="{% url 'usuarios:login' %}">Login</a>
+        <a href="{% url 'usuarios:profile' %}">Perfil</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
